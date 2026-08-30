@@ -14,6 +14,13 @@ internal class Program
         // 3.type safty
         #endregion
 
+        #region question 2
+        Question(2);
+        Container<int> intContainer = new Container<int>();
+        intContainer.Add(1);
+        Console.WriteLine(intContainer.Get());
+        #endregion
+
     }
 
 
