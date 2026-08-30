@@ -42,6 +42,12 @@ internal class Program
 
         #endregion
 
+        #region question 5
+        Question(5);
+        int[] numbers = {10,20,30,40,50,60,105,90};
+        Console.WriteLine($"Max = {FindMax(numbers)}");
+        #endregion
+
     }
 
     #region question 4
@@ -50,6 +56,21 @@ internal class Program
         T temp = x;
         x = y;
         y = temp;
+    }
+    #endregion
+
+    #region question 5
+    static T FindMax<T>(T[] arr) where T : IComparable<T>
+    {
+        T max = arr[0];
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i].CompareTo(max)>0)
+            {
+                max = arr[i];
+            }
+        }
+        return max;
     }
     #endregion
 
