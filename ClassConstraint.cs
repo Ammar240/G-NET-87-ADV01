@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_Advanced_S01_Generics;
 
-internal class ClassConstraint<T> where T : class, new()
+internal class ClassConstraint<T> where T : class,IRepository<T> ,new()
 {
     // T is place holder for class types (rference types)  ( string ,array ...)
     // value types are not allowed
@@ -14,4 +14,7 @@ internal class ClassConstraint<T> where T : class, new()
 
     // new() constraint
     // The class must contain a public parameterless constructor
+
+    // interface constraint
+    // the type must implement the interface 
 }
