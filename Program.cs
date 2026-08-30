@@ -20,6 +20,16 @@ internal class Program
         intContainer.Add(1);
         Console.WriteLine(intContainer.Get());
         #endregion
+        #region question 2
+        Question(3);
+        //class can take any number of parameters T
+        Pair<int, string> pair = new Pair<int, string>()
+        {
+            Key = 1,
+            Value = "Ammar"
+        };
+        Console.WriteLine($"{pair.Key} - {pair.Value}");
+        #endregion
 
     }
 
