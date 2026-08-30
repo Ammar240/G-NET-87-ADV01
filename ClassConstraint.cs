@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace CS_Advanced_S01_Generics;
 
-internal class ClassConstraint<T> where T : class
+internal class ClassConstraint<T> where T : class, new()
 {
     // T is place holder for class types (rference types)  ( string ,array ...)
     // value types are not allowed
     // can be null
+
+    // new() constraint
+    // The class must contain a public parameterless constructor
 }
